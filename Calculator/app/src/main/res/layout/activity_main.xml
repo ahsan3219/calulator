@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+
+        android:layout_height="235dp"
+
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/calculator"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/todo" />
+
+    <EditText
+        android:id="@+id/etFi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:hint="@string/enter_first_value"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/etSe"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:hint="@string/enter_second_value"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHighlight="#CA5F5F"
+        android:textColorHint="#757575"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/anS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#A81B1B"
+        android:backgroundTint="#C84141"
+        android:text="@string/plus"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColorHighlight="#420909"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#A81B1B"
+        android:text="@string/sub"
+        android:textColorHighlight="#420909"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#A81B1B"
+        android:text="@string/multi"
+        android:textColorHighlight="#420909"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#A81B1B"
+        android:text="@string/div"
+        android:textColorHighlight="#420909"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+</LinearLayout>
